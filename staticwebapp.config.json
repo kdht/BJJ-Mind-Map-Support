@@ -4,7 +4,7 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/brand/*", "/api/*", "*.css", "*.js", "*.ico", "*.svg", "*.png"]
+    "exclude": ["/brand/*", "/api/*", "/articles/*", "*.css", "*.js", "*.ico", "*.svg", "*.png", "*.md"]
   },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
