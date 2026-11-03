@@ -1,0 +1,7 @@
+{
+  "name": "bjj-mind-map-support-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "engines": { "node": ">=18" }
+}

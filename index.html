@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BJJ Mind Map — Support &amp; Roadmap</title>
+<meta name="description" content="Submit feature requests, browse the public roadmap, and find support articles for BJJ Mind Map.">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta property="og:title" content="BJJ Mind Map — Support &amp; Roadmap">
+<meta property="og:image" content="/brand/og-image.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img src="/brand/mark.svg" alt="" class="brand-mark">
+        <span>BJJ Mind Map <small>Support</small></span>
+      </a>
+      <nav>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#feature-request">Submit a request</a>
+        <a href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki" target="_blank" rel="noopener">Support wiki</a>
+        <a href="https://bjjmindmap.com" class="cta">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Help shape BJJ Mind Map</h1>
+      <p>This is the public home for BJJ Mind Map's development: submit feature requests and bug reports, track what's planned/in progress/shipped, and find how-to articles — no GitHub account required.</p>
+      <div class="hero-actions">
+        <a href="#feature-request" class="btn btn-primary">Submit a request</a>
+        <a href="#roadmap" class="btn">View the roadmap</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section">
+    <div class="wrap">
+      <h2>Roadmap</h2>
+      <p class="muted">Pulled live from our public issue tracker. Status reflects real development progress.</p>
+      <div class="roadmap-columns" id="roadmap-columns">
+        <div class="roadmap-col" data-status="roadmap:planned">
+          <h3><span class="dot dot-planned"></span> Planned</h3>
+          <ul class="roadmap-list" data-list="roadmap:planned"><li class="skeleton">Loading…</li></ul>
+        </div>
+        <div class="roadmap-col" data-status="roadmap:in-progress">
+          <h3><span class="dot dot-progress"></span> In progress</h3>
+          <ul class="roadmap-list" data-list="roadmap:in-progress"><li class="skeleton">Loading…</li></ul>
+        </div>
+        <div class="roadmap-col" data-status="roadmap:shipped">
+          <h3><span class="dot dot-shipped"></span> Shipped</h3>
+          <ul class="roadmap-list" data-list="roadmap:shipped"><li class="skeleton">Loading…</li></ul>
+        </div>
+      </div>
+      <p class="roadmap-fallback" id="roadmap-fallback" hidden>
+        Couldn't load the live roadmap right now — <a href="https://github.com/kdht/BJJ-Mind-Map-Support/issues" target="_blank" rel="noopener">view it directly on GitHub</a> instead.
+      </p>
+    </div>
+  </section>
+
+  <section id="feature-request" class="section alt">
+    <div class="wrap">
+      <h2>Submit a feature request or bug report</h2>
+      <p class="muted">This creates a public issue in our tracker so you (and everyone else) can follow its progress — no GitHub account needed to submit.</p>
+      <form id="request-form" class="card-form">
+        <div class="field">
+          <label for="f-type">Type</label>
+          <select id="f-type" name="type" required>
+            <option value="feature-request">Feature request</option>
+            <option value="bug">Bug report</option>
+            <option value="support-question">Support question</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-title">Title</label>
+          <input id="f-title" name="title" type="text" maxlength="150" required placeholder="Short summary">
+        </div>
+        <div class="field">
+          <label for="f-body">Details</label>
+          <textarea id="f-body" name="body" rows="6" maxlength="4000" required placeholder="What would you like to see, or what went wrong? Include steps to reproduce for bugs."></textarea>
+        </div>
+        <div class="field">
+          <label for="f-contact">Your email (optional, for follow-up only — never published)</label>
+          <input id="f-contact" name="contact" type="email" maxlength="200" placeholder="you@example.com">
+        </div>
+        <!-- honeypot -->
+        <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <button type="submit" class="btn btn-primary" id="f-submit">Submit</button>
+        <div id="f-status" class="form-status" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Support articles</h2>
+      <p class="muted">Browse how-to guides and troubleshooting in our wiki.</p>
+      <div class="support-grid">
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Getting-Started">Getting started</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Creating-Your-First-Mind-Map">Creating your first mind map</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Using-the-AI-Coach">Using the AI Coach</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Journal-Rich-Text-vs-Markdown">Journal: rich text vs. markdown</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Promotion-Tracking">Promotion tracking</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Account-and-Billing">Account &amp; billing</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki/Troubleshooting-Sign-In">Troubleshooting sign-in</a>
+        <a class="support-card" target="_blank" rel="noopener" href="https://github.com/kdht/BJJ-Mind-Map-Support/wiki">Browse all articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 KDHT Enterprises LLC — BJJ Mind Map</span>
+      <nav>
+        <a href="https://bjjmindmap.com">Main site</a>
+        <a href="https://bjjmindmap.com/terms.html">Terms</a>
+        <a href="https://bjjmindmap.com/privacy.html">Privacy</a>
+        <a href="https://github.com/kdht/BJJ-Mind-Map-Support/issues" target="_blank" rel="noopener">All issues (GitHub)</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
