@@ -10,7 +10,7 @@ async function loadRoadmap() {
     "roadmap:shipped": document.querySelector('[data-list="roadmap:shipped"]'),
   };
   try {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/issues?state=open&per_page=100&labels=roadmap:planned,roadmap:in-progress,roadmap:shipped`, {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/issues?state=open&per_page=100`, {
       headers: { Accept: "application/vnd.github+json" },
     });
     if (!res.ok) throw new Error("GitHub API " + res.status);
