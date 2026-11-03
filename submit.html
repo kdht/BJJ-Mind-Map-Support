@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Submit a Request — BJJ Mind Map Support</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h1>Submit a feature request or bug report</h1>
+      <p class="muted">This creates a public issue in our tracker so you (and everyone else) can follow its progress — no GitHub account needed to submit.</p>
+      <form id="request-form" class="card-form">
+        <div class="field">
+          <label for="f-type">Type</label>
+          <select id="f-type" name="type" required>
+            <option value="feature-request">Feature request</option>
+            <option value="bug">Bug report</option>
+            <option value="support-question">Support question</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-title">Title</label>
+          <input id="f-title" name="title" type="text" maxlength="150" required placeholder="Short summary">
+        </div>
+        <div class="field">
+          <label for="f-body">Details</label>
+          <textarea id="f-body" name="body" rows="6" maxlength="4000" required placeholder="What would you like to see, or what went wrong? Include steps to reproduce for bugs."></textarea>
+        </div>
+        <div class="field">
+          <label for="f-contact">Your email (optional, for follow-up only — never published)</label>
+          <input id="f-contact" name="contact" type="email" maxlength="200" placeholder="you@example.com">
+        </div>
+        <!-- honeypot -->
+        <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <button type="submit" class="btn btn-primary" id="f-submit">Submit</button>
+        <div id="f-status" class="form-status" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="/nav.js"></script>
+  <script>SupportSiteNav.renderHeader("submit"); SupportSiteNav.renderFooter();</script>
+  <script src="/submit.js"></script>
+</body>
+</html>

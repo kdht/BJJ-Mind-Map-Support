@@ -2,15 +2,12 @@
   "routes": [
     { "route": "/api/*", "allowedRoles": ["anonymous"] }
   ],
-  "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/brand/*", "/api/*", "/articles/*", "*.css", "*.js", "*.ico", "*.svg", "*.png", "*.md"]
-  },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin"
   },
   "mimeTypes": {
-    ".json": "application/json"
+    ".json": "application/json",
+    ".md": "text/markdown"
   }
 }

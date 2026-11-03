@@ -10,39 +10,19 @@
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.5/dist/purify.min.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <img src="/brand/mark.svg" alt="" class="brand-mark">
-        <span>BJJ Mind Map <small>Support</small></span>
-      </a>
-      <nav>
-        <a href="/#roadmap">Roadmap</a>
-        <a href="/#feature-request">Submit a request</a>
-        <a href="/#articles">Support articles</a>
-        <a href="https://bjjmindmap.com" class="cta">Get the app</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <section class="section">
     <div class="wrap article-wrap">
-      <a href="/#articles" class="back-link">← All articles</a>
+      <a href="/support.html" class="back-link">← All articles</a>
       <article id="article-body" class="article-body"><p class="muted">Loading…</p></article>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 KDHT Enterprises LLC — BJJ Mind Map</span>
-      <nav>
-        <a href="https://bjjmindmap.com">Main site</a>
-        <a href="https://bjjmindmap.com/terms.html">Terms</a>
-        <a href="https://bjjmindmap.com/privacy.html">Privacy</a>
-      </nav>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
+  <script src="/nav.js"></script>
+  <script>SupportSiteNav.renderHeader("support"); SupportSiteNav.renderFooter();</script>
   <script src="/article.js"></script>
 </body>
 </html>

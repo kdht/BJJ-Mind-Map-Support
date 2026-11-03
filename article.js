@@ -18,7 +18,7 @@ const el = document.getElementById("article-body");
 
 async function load() {
   if (!ALLOWED_SLUGS.has(slug)) {
-    el.innerHTML = '<h1>Article not found</h1><p>That article doesn\'t exist. <a href="/#articles">Browse all support articles</a>.</p>';
+    el.innerHTML = '<h1>Article not found</h1><p>That article doesn\'t exist. <a href="/support.html">Browse all support articles</a>.</p>';
     return;
   }
   try {
@@ -33,7 +33,7 @@ async function load() {
     });
     el.innerHTML = html;
   } catch {
-    el.innerHTML = '<h1>Couldn\'t load this article</h1><p>Please try again, or <a href="/#articles">browse all support articles</a>.</p>';
+    el.innerHTML = '<h1>Couldn\'t load this article</h1><p>Please try again, or <a href="/support.html">browse all support articles</a>.</p>';
   }
 }
 load();

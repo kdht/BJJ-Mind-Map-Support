@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roadmap — BJJ Mind Map Support</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h1>Roadmap</h1>
+      <p class="muted">Pulled live from our public issue tracker. Status reflects real development progress.</p>
+      <div class="roadmap-columns" id="roadmap-columns">
+        <div class="roadmap-col" data-status="roadmap:planned">
+          <h3><span class="dot dot-planned"></span> Planned</h3>
+          <ul class="roadmap-list" data-list="roadmap:planned"><li class="skeleton">Loading…</li></ul>
+        </div>
+        <div class="roadmap-col" data-status="roadmap:in-progress">
+          <h3><span class="dot dot-progress"></span> In progress</h3>
+          <ul class="roadmap-list" data-list="roadmap:in-progress"><li class="skeleton">Loading…</li></ul>
+        </div>
+        <div class="roadmap-col" data-status="roadmap:shipped">
+          <h3><span class="dot dot-shipped"></span> Shipped</h3>
+          <ul class="roadmap-list" data-list="roadmap:shipped"><li class="skeleton">Loading…</li></ul>
+        </div>
+      </div>
+      <p class="roadmap-fallback" id="roadmap-fallback" hidden>
+        Couldn't load the live roadmap right now — <a href="https://github.com/kdht/BJJ-Mind-Map-Support/issues" target="_blank" rel="noopener">view it directly on GitHub</a> instead.
+      </p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="/nav.js"></script>
+  <script src="/common.js"></script>
+  <script>SupportSiteNav.renderHeader("roadmap"); SupportSiteNav.renderFooter();</script>
+  <script src="/roadmap.js"></script>
+</body>
+</html>
